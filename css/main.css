@@ -81,28 +81,32 @@ body {
 
 .header-box-primary {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .header-logo-link {
   margin-right: auto;
 }
-
-.header-list {
-  padding: 0px;
+.header-nav{
+  width: 270px;
+  margin-right: 40px;
+}
+.nav-list {
   display: flex;
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
 }
 
-.header-item {
+.nav-item {
   margin-right: 30px;
 }
 
-.header-item:last-child {
+.nav-item:last-child {
   margin-right: 0px;
 }
 
-.header-item-link {
+.nav-item-link {
   padding-bottom: 6px;
   font-size: 15px;
   line-height: 150%;
@@ -110,7 +114,7 @@ body {
   text-decoration: none;
 }
 
-.header-item-link:hover {
+.nav-item-link:hover {
   border-bottom: 2px solid #000;
   transition: all 0.2s ease;
 }
@@ -118,11 +122,12 @@ body {
 .input-search {
   width: 169px;
   font-size: 15px;
-line-height: 150%;
-border: none;
-border-bottom: 1px solid #333;
-color: #666666;
+  line-height: 150%;
+  border: none;
+  border-bottom: 1px solid #333;
+  color: #666666;
 }
+
 /* Site header end */
 
 /* Site main start */
@@ -185,7 +190,6 @@ color: #666666;
 
 .freedom-link:hover {
   background-color: #c9514c;
-  ;
 }
 
 /* Section freedom end */
@@ -259,13 +263,13 @@ color: #666666;
 
 /* section nike start */
 .nike {
-  position: relative;
   padding-top: 106px;
   padding-bottom: 106px;
   margin-bottom: 70px;
 }
 
 .nike-box-primary {
+  position: relative;
   width: 490px;
 }
 
@@ -273,13 +277,16 @@ color: #666666;
   padding: 12px 90px;
 }
 
-.nike-img {
+.nike-box-primary::after {
+  content: "";
   position: absolute;
-  right: 352px;
-  bottom: -1px;
+  top: -27.5%;
+  left: 144.7%;
+  display: block;
   width: 400px;
   height: 600px;
   background-image: url("../images/nike-watch.jpg");
+  background-repeat: no-repeat;
 }
 
 /* section nike end */
